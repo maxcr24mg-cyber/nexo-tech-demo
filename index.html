@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nexo Tech - Tecnología seleccionada para tu día a día">
+  <title>Nexo Tech | Tecnología para todos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-main">
+      <a class="brand" href="#" aria-label="Nexo Tech, inicio">
+        <span class="brand-mark">N</span>
+        <span>Nexo<span>Tech</span></span>
+      </a>
+
+      <form class="search" id="searchForm" role="search">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m1.35-5.15a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z"/></svg>
+        <input id="searchInput" type="search" placeholder="Buscar productos..." autocomplete="off" aria-label="Buscar productos">
+      </form>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#productos">Productos</a>
+        <a href="#categorias">Categorías</a>
+        <a href="#ofertas">Ofertas</a>
+      </nav>
+
+      <button class="cart-button" id="cartButton" type="button" aria-label="Abrir carrito">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 3h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L20.5 7H6.2M9.5 20h.01M17.5 20h.01"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="ofertas">
+      <div class="hero-content">
+        <span class="eyebrow">Oferta de temporada</span>
+        <h1>Tu tecnología,<br><strong>ahora mejor</strong></h1>
+        <p>Hasta <strong>30% de descuento</strong> en dispositivos seleccionados.</p>
+        <a class="primary-button" href="#productos">Ver ofertas
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></svg>
+        </a>
+      </div>
+      <div class="hero-visual" aria-label="Colección tecnológica Nexo Tech">
+        <div class="glow"></div>
+        <div class="device device-laptop">
+          <div class="laptop-screen"><span></span></div>
+          <div class="laptop-base"></div>
+        </div>
+        <div class="device device-phone">
+          <div class="phone-screen"></div>
+        </div>
+        <div class="device device-watch">
+          <div class="watch-face"><i></i></div>
+        </div>
+        <span class="hero-price">Desde <strong>$299</strong></span>
+      </div>
+    </section>
+
+    <section class="categories section" id="categorias">
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">Explora</span>
+          <h2>Categorías populares</h2>
+        </div>
+        <a href="#productos" class="text-link">Ver todo <span>→</span></a>
+      </div>
+      <div class="category-grid" id="categoryGrid">
+        <button class="category-card" type="button" data-category="Celulares">
+          <span class="category-icon phone-icon">
+            <svg aria-hidden="true" viewBox="0 0 64 64"><rect x="19" y="7" width="26" height="50" rx="5"/><circle cx="32" cy="49" r="2"/><path d="M27 13h10"/></svg>
+          </span>
+          <strong>Celulares</strong><small>+12 productos</small>
+        </button>
+        <button class="category-card" type="button" data-category="Laptops">
+          <span class="category-icon laptop-icon">
+            <svg aria-hidden="true" viewBox="0 0 64 64"><rect x="13" y="12" width="38" height="28" rx="3"/><path d="M8 46h48l-4 6H12Z"/></svg>
+          </span>
+          <strong>Laptops</strong><small>+8 productos</small>
+        </button>
+        <button class="category-card" type="button" data-category="Televisores">
+          <span class="category-icon tv-icon">
+            <svg aria-hidden="true" viewBox="0 0 64 64"><rect x="8" y="12" width="48" height="34" rx="3"/><path d="M24 52h16M32 46v6"/></svg>
+          </span>
+          <strong>Televisores</strong><small>+9 productos</small>
+        </button>
+        <button class="category-card" type="button" data-category="Audífonos">
+          <span class="category-icon audio-icon">
+            <svg aria-hidden="true" viewBox="0 0 64 64"><path d="M12 35v-5a20 20 0 0 1 40 0v5"/><rect x="8" y="32" width="12" height="18" rx="5"/><rect x="44" y="32" width="12" height="18" rx="5"/></svg>
+          </span>
+          <strong>Audífonos</strong><small>+15 productos</small>
+        </button>
+        <button class="category-card" type="button" data-category="Accesorios">
+          <span class="category-icon accessory-icon">
+            <svg aria-hidden="true" viewBox="0 0 64 64"><circle cx="32" cy="32" r="19"/><circle cx="32" cy="32" r="8"/><path d="M32 13V8M32 56v-5M13 32H8M56 32h-5"/></svg>
+          </span>
+          <strong>Accesorios</strong><small>+20 productos</small>
+        </button>
+        <button class="category-card" type="button" data-category="Hogar inteligente">
+          <span class="category-icon home-icon">
+            <svg aria-hidden="true" viewBox="0 0 64 64"><path d="m8 30 24-18 24 18"/><path d="M14 27v27h36V27M26 54V39h12v15"/><circle cx="32" cy="29" r="5"/></svg>
+          </span>
+          <strong>Hogar inteligente</strong><small>+10 productos</small>
+        </button>
+      </div>
+    </section>
+
+    <section class="products-section section" id="productos">
+      <div class="section-heading products-heading">
+        <div>
+          <span class="section-kicker">Lo más buscado</span>
+          <h2>Productos destacados</h2>
+        </div>
+        <div class="filters" id="filters" aria-label="Filtrar por categoría">
+          <button type="button" class="filter active" data-category="Todos" aria-pressed="true">Todos</button>
+          <button type="button" class="filter" data-category="Celulares" aria-pressed="false">Celulares</button>
+          <button type="button" class="filter" data-category="Televisores" aria-pressed="false">Televisores</button>
+          <button type="button" class="filter" data-category="Audífonos" aria-pressed="false">Audífonos</button>
+          <button type="button" class="filter" data-category="Accesorios" aria-pressed="false">Accesorios</button>
+          <button type="button" class="filter" data-category="Laptops" aria-pressed="false">Laptops</button>
+          <button type="button" class="filter" data-category="Hogar inteligente" aria-pressed="false">Hogar inteligente</button>
+        </div>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <p class="empty-state" id="emptyState" hidden>No encontramos productos con esos criterios.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a class="brand" href="#"><span class="brand-mark">N</span><span>Nexo<span>Tech</span></span></a>
+        <p>Tecnología confiable para hacer tu vida más fácil.</p>
+      </div>
+      <div class="footer-links"><strong>Comprar</strong><a href="#productos">Novedades</a><a href="#ofertas">Ofertas</a><a href="#categorias">Categorías</a></div>
+      <div class="footer-links"><strong>Ayuda</strong><a href="#">Contacto</a><a href="#">Preguntas frecuentes</a><a href="#">Envíos y devoluciones</a></div>
+      <div class="footer-links"><strong>Síguenos</strong><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">TikTok</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Nexo Tech. Demo ficticia.</span><span><a href="#">Privacidad</a><a href="#">Términos</a></span></div>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrito de compras" aria-hidden="true">
+    <div class="cart-header">
+      <div><span class="section-kicker">Tu selección</span><h2>Carrito <small id="drawerCount">(0)</small></h2></div>
+      <button class="close-cart" id="closeCart" type="button" aria-label="Cerrar carrito">×</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer" id="cartFooter">
+      <div class="cart-total"><span>Total</span><strong id="cartTotal">$0</strong></div>
+      <button class="checkout-button" type="button" id="checkoutButton">Finalizar compra demo</button>
+      <p>No se procesarán pagos ni datos personales.</p>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">Producto agregado</div>
+  <script src="script.js"></script>
+</body>
+</html>
